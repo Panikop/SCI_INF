@@ -1,0 +1,4 @@
+﻿  Zadanie.cpp
+C:\Users\Panik\Desktop\PracaNaLekcjiNr4\Zadanie\Zadanie\Zadanie.cpp(15,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\Panik\Desktop\PracaNaLekcjiNr4\Zadanie\Zadanie\Zadanie.cpp(24,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  Zadanie.vcxproj -> C:\Users\Panik\Desktop\PracaNaLekcjiNr4\Zadanie\Debug\Zadanie.exe
