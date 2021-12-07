@@ -13,6 +13,11 @@ int main()
 	dane ane;
 	cout << "podaj male litery" << endl;
 	getline(cin, tek.tekst);
+	cout << "wbierz 1, 2, 3 lub 4" << endl;
+	cout << "1. podstawieniowy" << endl;
+	cout << "2. przedstawieniowy" << endl;
+	cout << "3. oba" << endl;
+	cout << "4. rsa" << endl;
 	cout << "wybierz" << endl;
 	int wybor;
 	cin >> wybor;

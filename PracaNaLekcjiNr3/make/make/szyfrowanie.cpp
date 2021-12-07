@@ -52,6 +52,13 @@ string dane::antypodstawieniowy(string tekst, int przesuniecie)
 	return nowiem;
 }
 
+int modInverse(int a, int m)
+{
+	for (int x = 1; x < m; x++)
+		if (((a%m) * (x%m)) % m == 1)
+			return x;
+}
+
 string dane::dalej(string tekst)
 {
 	int Tablica[15];
@@ -74,22 +81,9 @@ string dane::dalej(string tekst)
 	int publiczny, prywatny;
 	cin >> publiczny;
 	cout << "Twoj kod publiczny ( " << publiczny << " " << n << " )" << endl;
-	if (((tocjent + 1) % publiczny) == 0)
-	{
-		prywatny = (tocjent + 1) / publiczny;
-		cout << "Twoj kod prywatny ( " << prywatny << " " << n << " )" << endl;
-	}
-	else
-	{
-		while (((tocjent + 1) % publiczny) != 0)
-		{
-			tocjent = tocjent * 2;
-			prywatny = (tocjent + 1) / publiczny;
-		}
-		prywatny = (tocjent + 1) / publiczny;
 
-		cout << "Twoj kod prywatny ( " << prywatny << " " << n << " )" << endl;
-	}
+	int no = modInverse(publiczny, tocjent);
+	cout << "Twoj kod prywatny ( " << no << " " << n << " )" << endl;
 	string plp;
 	plp = "oko";
 	return plp;

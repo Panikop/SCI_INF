@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <utility>
 using namespace std;
 class dane
 {
